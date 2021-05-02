@@ -4,7 +4,7 @@ export default class LanguageSelect extends Component {
 
   static propTypes = {
     language: PropTypes.oneOf([
-      'mysql', 'pg', 'redshift', 'sqlite3', 'oracle', 'mssql'
+      'mysql', 'pg', 'redshift', 'sqlite3', 'oracledb', 'mssql'
     ]).isRequired,
     changeLanguage: PropTypes.func.isRequired
   };
@@ -22,7 +22,7 @@ export default class LanguageSelect extends Component {
           <option value="pg">PostgreSQL</option>
           <option value="redshift">Amazon Redshift</option>
           <option value="sqlite3">SQLite3</option>
-          <option value="oracle">Oracle</option>
+          <option value="oracledb">Oracle</option>
           <option value="mssql">MSSQL</option>
         </select>
       </div>
